@@ -1,0 +1,42 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Just Coffees</string>
+    <string name="name">Name</string>
+    <string name="toppings">Toppings</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="less">-</string>
+    <string name="quantity_view">2</string>
+    <string name="more">+</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="summary_view">Total: $10</string>
+    <string name="order_button">Order</string>
+
+    <string name="name_toast">Name is required.</string>
+    <string name="max_order_toast">Maximum order is 100 cups.</string>
+    <string name="min_order_toast">Minimum order is 1 cup.</string>
+
+    <string name="quantity_view_value">
+        <xliff:g example="2" id="quantit_v">%d</xliff:g>
+    </string>
+
+    <string name="order_summary_value">
+        Total: $<xliff:g example="2" id="quantit_v">%d</xliff:g>
+    </string>
+
+    <string name="summary_start">
+        Name: <xliff:g example="Kenneth" id="name">%s</xliff:g>
+        "\n"Quantity: <xliff:g example="2" id="quantit">%d</xliff:g>
+        "\n"Toppings:
+    </string>
+    <string name="whipped_cream_topping"> \'Whipped Cream\'\t\t</string>
+    <string name="chocolate_topping"> \'Chocolate\'\t\t</string>
+    <string name="no_topping"> None  </string>
+    <string name="summary_end">
+        "\n"Total price: $<xliff:g example="10" id="price">%d</xliff:g>
+        "\n"Thank You!
+    </string>
+
+    <string name="order_subject">New Coffee Order</string>
+    <string name="chooser_msg">Send email using?</string>
+</resources>

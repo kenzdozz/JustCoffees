@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chidozie.justcoffees.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/name"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/Heading"
+            android:text="@string/toppings" />
+
+        <CheckBox
+            android:id="@+id/toppingsCream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="changeToppings"
+            android:paddingEnd="24dp"
+            android:paddingStart="24dp"
+            android:text="@string/whipped_cream"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/toppingsChocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="changeToppings"
+            android:paddingEnd="24dp"
+            android:paddingStart="24dp"
+            android:text="@string/chocolate"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/Heading"
+            android:text="@string/quantity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="#CE93D8"
+                android:onClick="changeQuantity"
+                android:tag="0"
+                android:text="@string/less" />
+
+            <TextView
+                android:id="@+id/quantity_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/quantity_view"
+                android:textColor="#000"
+                android:textSize="26sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="#CE93D8"
+                android:onClick="changeQuantity"
+                android:tag="1"
+                android:text="@string/more" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Heading"
+            android:text="@string/order_summary" />
+
+        <TextView
+            android:id="@+id/summary_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="@string/summary_view"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#6A1B9A"
+            android:onClick="submitOrder"
+            android:text="@string/order_button"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</ScrollView>
+
