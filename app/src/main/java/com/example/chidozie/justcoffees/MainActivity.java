@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         cream = toppingCream.isChecked();
         CheckBox toppingChocolate = findViewById(R.id.toppingsChocolate);
         chocolate = toppingChocolate.isChecked();
-    }
+    } 
 
     public void composeEmail(String body) {
         Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "KenzDozz@aol.com", null));
